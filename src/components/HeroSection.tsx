@@ -9,16 +9,20 @@ const images = [
 ];
 
 const works = [
-  { title: 'Работа 1', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pb0nc8pxa26' },
-  { title: 'Работа 2', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pydow8ai226' },
-  { title: 'Работа 3', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pexo8oanc26' },
-  { title: 'Работа 4', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=p4kne0dwk26' },
-  { title: 'Работа 5', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pj4d7rfjj26' },
-  { title: 'Работа 6', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pvxavf4qc26' },
-  { title: 'Работа 7', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=psh6a6ozj26' },
-  { title: 'Работа 8', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pb504u1t526' },
-  { title: 'Работа 9', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pdu94u3fn26' },
-  { title: 'Работа 10', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=ptq3iqbjk26' },
+  { title: 'Работа 1', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pb0nc8pxa26' },
+  { title: 'Работа 2', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pydow8ai226' },
+  { title: 'Работа 3', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pexo8oanc26' },
+  { title: 'Работа 4', description: 'LearningApps', link: 'https://learningapps.org/watch?v=p4kne0dwk26' },
+  { title: 'Работа 5', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pj4d7rfjj26' },
+  { title: 'Работа 6', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pvxavf4qc26' },
+  { title: 'Работа 7', description: 'LearningApps', link: 'https://learningapps.org/watch?v=psh6a6ozj26' },
+  { title: 'Работа 8', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pb504u1t526' },
+  { title: 'Работа 9', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pdu94u3fn26' },
+  { title: 'Работа 10', description: 'LearningApps', link: 'https://learningapps.org/watch?v=ptq3iqbjk26' },
+  { title: '1С:Урок', description: 'Интерактивный урок', link: 'https://urok.1c.ru/share/task/ab004ec8eaec271406b085e981d0e529/' },
+  { title: 'Банк тестов', description: 'Тест онлайн', link: 'https://banktestov.ru/test/113765' },
+  { title: 'Online Test', description: 'Онлайн-тестирование', link: 'https://onlinetestpad.com/xtlorblvwo4iy' },
+  { title: 'Яндекс Формы', description: 'Анкета / опрос', link: 'https://anketolog.ru/rs/1038455/rSjFbd7w' },
 ];
 
 export default function HeroSection() {
