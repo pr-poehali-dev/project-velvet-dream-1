@@ -9,21 +9,16 @@ const images = [
 ];
 
 const works = [
-  {
-    title: 'Проект 1',
-    description: 'Описание вашей работы или достижения',
-    link: '#',
-  },
-  {
-    title: 'Проект 2',
-    description: 'Описание вашей работы или достижения',
-    link: '#',
-  },
-  {
-    title: 'Проект 3',
-    description: 'Описание вашей работы или достижения',
-    link: '#',
-  },
+  { title: 'Работа 1', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pb0nc8pxa26' },
+  { title: 'Работа 2', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pydow8ai226' },
+  { title: 'Работа 3', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pexo8oanc26' },
+  { title: 'Работа 4', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=p4kne0dwk26' },
+  { title: 'Работа 5', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pj4d7rfjj26' },
+  { title: 'Работа 6', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pvxavf4qc26' },
+  { title: 'Работа 7', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=psh6a6ozj26' },
+  { title: 'Работа 8', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pb504u1t526' },
+  { title: 'Работа 9', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=pdu94u3fn26' },
+  { title: 'Работа 10', description: 'Учебное задание', link: 'https://learningapps.org/watch?v=ptq3iqbjk26' },
 ];
 
 export default function HeroSection() {
@@ -97,7 +92,7 @@ export default function HeroSection() {
           <p className="mb-6 text-xs uppercase tracking-widest text-white/40">
             Мои работы и проекты
           </p>
-          <div className="grid grid-cols-1 gap-4 sm:grid-cols-3">
+          <div className="grid grid-cols-2 gap-4 sm:grid-cols-3 lg:grid-cols-5">
             {works.map((work, i) => (
               <a
                 key={i}
