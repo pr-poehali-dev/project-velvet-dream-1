@@ -88,7 +88,7 @@ export default function HeroSection() {
             >
               <div className="space-y-3">
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                  Москоленко Иван
+                  Москаленко Иван
                 </p>
                 <p className="text-xl font-light text-white/80 md:text-2xl">
                   Студент 1 курса
