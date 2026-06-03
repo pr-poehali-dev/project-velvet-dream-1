@@ -8,7 +8,14 @@ const images = [
   'https://cdn.poehali.dev/templates/creative-portfolio-ru/gallery-5.jpg',
 ];
 
-const works = [
+type Work = {
+  title: string;
+  description: string;
+  link: string;
+  image?: string;
+};
+
+const works: Work[] = [
   { title: 'Работа 1', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pb0nc8pxa26' },
   { title: 'Работа 2', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pydow8ai226' },
   { title: 'Работа 3', description: 'LearningApps', link: 'https://learningapps.org/watch?v=pexo8oanc26' },
@@ -23,6 +30,18 @@ const works = [
   { title: 'Банк тестов', description: 'Тест онлайн', link: 'https://banktestov.ru/test/113765' },
   { title: 'Президенты', description: 'Online Test', link: 'https://onlinetestpad.com/xtlorblvwo4iy' },
   { title: 'Яндекс Формы', description: 'Анкета / опрос', link: 'https://anketolog.ru/rs/1038455/rSjFbd7w' },
+  {
+    title: 'Стоп, кибербуллинг!',
+    description: 'Инфографика',
+    link: 'https://cdn.poehali.dev/projects/c7f9ee5e-b8a0-4075-8c10-03ea40fae594/bucket/85056a29-cfe6-4472-bf8c-ba2a3c54c7a4.jpg',
+    image: 'https://cdn.poehali.dev/projects/c7f9ee5e-b8a0-4075-8c10-03ea40fae594/bucket/85056a29-cfe6-4472-bf8c-ba2a3c54c7a4.jpg',
+  },
+  {
+    title: 'Твоя сила — защита онлайн',
+    description: 'Плакат',
+    link: 'https://cdn.poehali.dev/projects/c7f9ee5e-b8a0-4075-8c10-03ea40fae594/bucket/a3bb8dd0-376f-4aac-86df-2b35f762fcb2.jpg',
+    image: 'https://cdn.poehali.dev/projects/c7f9ee5e-b8a0-4075-8c10-03ea40fae594/bucket/a3bb8dd0-376f-4aac-86df-2b35f762fcb2.jpg',
+  },
 ];
 
 export default function HeroSection() {
@@ -50,11 +69,7 @@ export default function HeroSection() {
               currentIndex === index ? 'opacity-100' : 'opacity-0'
             )}
           >
-            <img
-              src={src}
-              alt=""
-              className="h-full w-full object-cover"
-            />
+            <img src={src} alt="" className="h-full w-full object-cover" />
           </div>
         ))}
       </div>
@@ -103,17 +118,28 @@ export default function HeroSection() {
                 href={work.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group flex flex-col gap-1 border border-white/10 bg-white/5 p-5 backdrop-blur-sm transition-all duration-300 hover:border-white/30 hover:bg-white/10"
+                className="group flex flex-col gap-1 border border-white/10 bg-white/5 backdrop-blur-sm transition-all duration-300 hover:border-white/30 hover:bg-white/10 overflow-hidden"
               >
-                <span className="text-sm font-medium text-white group-hover:text-white/90">
-                  {work.title}
-                </span>
-                <span className="text-xs text-white/50 group-hover:text-white/70">
-                  {work.description}
-                </span>
-                <span className="mt-2 text-xs text-white/30 group-hover:text-white/50 underline underline-offset-2">
-                  Открыть →
-                </span>
+                {work.image && (
+                  <div className="h-32 w-full overflow-hidden">
+                    <img
+                      src={work.image}
+                      alt={work.title}
+                      className="h-full w-full object-cover transition-transform duration-300 group-hover:scale-105"
+                    />
+                  </div>
+                )}
+                <div className="flex flex-col gap-1 p-4">
+                  <span className="text-sm font-medium text-white group-hover:text-white/90">
+                    {work.title}
+                  </span>
+                  <span className="text-xs text-white/50 group-hover:text-white/70">
+                    {work.description}
+                  </span>
+                  <span className="mt-2 text-xs text-white/30 group-hover:text-white/50 underline underline-offset-2">
+                    Открыть →
+                  </span>
+                </div>
               </a>
             ))}
           </div>
