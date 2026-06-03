@@ -66,22 +66,6 @@ export default function HeroSection() {
         {/* Main info */}
         <div className="container mx-auto px-8 md:px-16 flex items-center flex-1">
           <div className="flex max-w-2xl flex-col gap-10">
-            {/* Portrait */}
-            <div
-              className={cn(
-                'transform transition-all duration-1000 ease-out',
-                isLoaded ? 'translate-x-0 opacity-100' : '-translate-x-8 opacity-0'
-              )}
-            >
-              <div className="relative h-48 w-48 overflow-hidden rounded-full border-4 border-white shadow-2xl md:h-64 md:w-64">
-                <img
-                  src="https://cdn.poehali.dev/templates/creative-portfolio-ru/portrait.jpg"
-                  alt="Учитель"
-                  className="h-full w-full object-cover"
-                />
-              </div>
-            </div>
-
             <div
               className={cn(
                 'transform transition-all duration-1000 delay-300 ease-out',
