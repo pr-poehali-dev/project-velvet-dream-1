@@ -74,13 +74,13 @@ export default function HeroSection() {
             >
               <div className="space-y-3">
                 <p className="text-3xl font-light text-white md:text-4xl lg:text-5xl">
-                  Ваше Имя
+                  Москоленко Иван
                 </p>
                 <p className="text-xl font-light text-white/80 md:text-2xl">
-                  Учитель | Педагог
+                  Студент 1 курса
                 </p>
                 <p className="text-base text-white/60 max-w-md leading-relaxed">
-                  Многолетний опыт в образовании. Здесь собраны мои лучшие проекты и работы за карьеру.
+                  Здесь собраны мои лучшие проекты и работы за время учёбы.
                 </p>
               </div>
             </div>
